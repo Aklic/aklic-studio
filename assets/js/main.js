@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    console.log("Aklic Studio initialized.");
+    console.log("Aklic initialized.");
 
 });
