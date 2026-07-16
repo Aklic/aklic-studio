@@ -4,7 +4,6 @@ function createGameCard(game){
 
 <article
 class="game-card"
-data-id="${game.id}"
 onclick="location.href='game.html?id=${game.id}'">
 
     <div class="game-thumbnail">
@@ -16,6 +15,12 @@ onclick="location.href='game.html?id=${game.id}'">
     </div>
 
     <div class="game-content">
+
+        <span class="game-badge">
+
+            ${game.badge}
+
+        </span>
 
         <h3 class="game-title">
 
@@ -37,34 +42,32 @@ onclick="location.href='game.html?id=${game.id}'">
 
 }
 
-async function renderFeaturedGames(filter = ""){
+async function renderGames(filter=""){
 
-    const games = await getGames();
+    const games=await getGames();
 
-    const grid =
-        document.getElementById(
-            "featured-games-grid"
-        );
+    const grid=document.getElementById("games-grid");
 
     if(!grid) return;
 
-    const keyword =
-        filter.toLowerCase();
+    const keyword=filter.toLowerCase();
 
-    const filtered =
-        games.filter(game => {
+    const visibleGames=games.filter(game=>{
 
-            return game.status === "published"
+        return game.status==="published"
 
-            && game.title
-            .toLowerCase()
-            .includes(keyword);
+        && game.title
+        .toLowerCase()
+        .includes(keyword);
 
-        });
+    });
 
-    grid.innerHTML =
-        filtered
+    grid.innerHTML=
+
+        visibleGames
+
         .map(createGameCard)
+
         .join("");
 
 }
