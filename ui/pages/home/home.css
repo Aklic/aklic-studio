@@ -1,5 +1,6 @@
-section{
-
-    width:100%;
-
-}
+@import url("hero/hero.css");
+@import url("featured-games/featured-games.css");
+@import url("how-it-works/how-it-works.css");
+@import url("why-aklic/why-aklic.css");
+@import url("who-uses/who-uses.css");
+@import url("studio-preview/studio-preview.css");
