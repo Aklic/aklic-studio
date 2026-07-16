@@ -1,11 +1,21 @@
 function enterFullscreen(){
 
-    const element =
-        document.documentElement;
+    const frame =
+        document.getElementById("game-frame");
 
-    if(element.requestFullscreen){
+    if(frame && frame.requestFullscreen){
 
-        element.requestFullscreen();
+        frame.requestFullscreen();
+
+    }
+
+}
+
+function exitFullscreen(){
+
+    if(document.fullscreenElement){
+
+        document.exitFullscreen();
 
     }
 
