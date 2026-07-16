@@ -1,23 +1,27 @@
 # Space Runner
 
-Category: Action
+## Category
+Action
 
-Status: Published
+## Status
+Preparing Integration
 
-Platform:
+## Supported Platforms
 
 - Desktop
 - Mobile
 
-Integrated into the Aklic Gaming Platform.
+## Description
 
-Folder Structure
+Space Runner is the first official game integrated into the Aklic Gaming Platform.
+
+## Folder Structure
 
 game/
-Actual game files
+Actual game files.
 
 preview/
-Thumbnail and banner images
+Thumbnail, banner and screenshots.
 
 docs/
-License and credits
+License and credits.
