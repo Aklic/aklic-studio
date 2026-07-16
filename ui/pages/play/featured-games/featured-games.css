@@ -1,1 +1,29 @@
+.games-library{
 
+    padding:40px 0 100px;
+
+}
+
+.games-header{
+
+    margin-bottom:32px;
+
+}
+
+.games-header p{
+
+    margin-top:10px;
+
+    color:var(--text-muted);
+
+}
+
+.games-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+
+    gap:24px;
+
+}
