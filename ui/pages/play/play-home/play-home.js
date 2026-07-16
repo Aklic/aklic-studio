@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",()=>{
 
     loadPlayHome();
 
@@ -6,28 +6,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function loadPlayHome(){
 
-    const app = document.getElementById("app");
+    const app=document.getElementById("app");
 
     if(!app) return;
 
-    app.innerHTML = await loadHTML(
+    app.innerHTML=await loadHTML(
+
         "ui/pages/play/play-home/play-home.html"
+
     );
 
     await loadSection(
+
         "games-search",
+
         "ui/pages/play/search/search.html"
+
     );
 
     await loadSection(
+
         "games-categories",
+
         "ui/pages/play/categories/categories.html"
+
     );
 
     await loadSection(
+
         "games-featured",
+
         "ui/pages/play/featured-games/featured-games.html"
+
     );
+
+    renderGames();
 
 }
 
