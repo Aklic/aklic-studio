@@ -29,6 +29,7 @@ async function loadGamesHome() {
         "ui/pages/play/featured-games/featured-games.html"
     );
 
+    // Render all published games
     renderFeaturedGames();
 
 }
@@ -39,6 +40,16 @@ async function loadSection(id, file) {
 
     if (!element) return;
 
-    element.innerHTML = await loadHTML(file);
+    try {
+
+        const html = await loadHTML(file);
+
+        element.innerHTML = html;
+
+    } catch (error) {
+
+        console.error(`Failed to load: ${file}`, error);
+
+    }
 
 }
