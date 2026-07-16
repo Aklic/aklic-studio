@@ -1,3 +1,6 @@
+let currentSearch = "";
+let currentCategory = "All";
+
 function createGameCard(game){
 
     return `
@@ -42,32 +45,33 @@ onclick="location.href='game.html?id=${game.id}'">
 
 }
 
-async function renderGames(filter=""){
+async function renderGames(){
 
-    const games=await getGames();
+    const games = await getGames();
 
-    const grid=document.getElementById("games-grid");
+    const grid = document.getElementById("games-grid");
 
     if(!grid) return;
 
-    const keyword=filter.toLowerCase();
+    const visibleGames = games.filter(game => {
 
-    const visibleGames=games.filter(game=>{
+        const searchMatch =
+            game.title
+            .toLowerCase()
+            .includes(currentSearch.toLowerCase());
 
-        return game.status==="published"
+        const categoryMatch =
+            currentCategory === "All"
+            || game.category === currentCategory;
 
-        && game.title
-        .toLowerCase()
-        .includes(keyword);
+        return game.status === "published"
+            && searchMatch
+            && categoryMatch;
 
     });
 
-    grid.innerHTML=
-
-        visibleGames
-
+    grid.innerHTML = visibleGames
         .map(createGameCard)
-
         .join("");
 
 }
