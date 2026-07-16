@@ -3,6 +3,7 @@
 @import url("typography.css");
 
 @import url("../../ui/layout/navigation/navigation.css");
+@import url("../../ui/layout/footer/footer.css");
 
 @import url("../../ui/pages/home/home.css");
 @import url("../../ui/pages/home/hero/hero.css");
