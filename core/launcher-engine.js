@@ -27,3 +27,28 @@ function connectLauncherButtons(){
     }
 
 }
+
+function connectExitButton(){
+
+    const exitButton =
+        document.getElementById("exit-game");
+
+    if(!exitButton) return;
+
+    exitButton.onclick = () => {
+
+        const leave = confirm(
+            "Are you sure you want to leave this game?"
+        );
+
+        if(leave){
+
+            exitFullscreen();
+
+            loadLauncher(window.currentGame);
+
+        }
+
+    };
+
+}
