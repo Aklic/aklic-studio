@@ -1,1 +1,102 @@
+.featured-games{
 
+    padding:90px 0;
+
+}
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:40px;
+
+}
+
+.section-header p{
+
+    margin-top:10px;
+
+    color:var(--text-muted);
+
+}
+
+.view-all{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.games-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:24px;
+
+}
+
+.game-card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+}
+
+.game-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.game-thumbnail{
+
+    aspect-ratio:16/9;
+
+    background:var(--surface-light);
+
+}
+
+.game-thumbnail img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.game-content{
+
+    padding:18px;
+
+}
+
+.game-title{
+
+    margin-bottom:10px;
+
+}
+
+.play-link{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
