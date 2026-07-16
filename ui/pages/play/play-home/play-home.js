@@ -40,7 +40,7 @@ async function loadPlayHome(){
 
     );
 
-    renderGames();
+    await renderGames();
 
 }
 
