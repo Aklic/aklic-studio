@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const input = document.getElementById("game-search");
+    document.addEventListener("input", event => {
 
-    if(!input) return;
+        if(event.target.id !== "game-search") return;
 
-    input.addEventListener("input", () => {
+        currentSearch = event.target.value;
 
-        renderFeaturedGames(input.value);
+        renderGames();
 
     });
 
