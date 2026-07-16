@@ -27,6 +27,11 @@ async function loadHome(){
     renderFeaturedGames();
 
     await loadSection(
+        "studio-preview",
+        "ui/pages/home/studio-preview/studio-preview.html"
+    );
+
+    await loadSection(
         "how-it-works",
         "ui/pages/home/how-it-works/how-it-works.html"
     );
@@ -42,8 +47,8 @@ async function loadHome(){
     );
 
     await loadSection(
-        "studio-preview",
-        "ui/pages/home/studio-preview/studio-preview.html"
+        "aklic-at-a-glance",
+        "ui/pages/home/aklic-at-a-glance/aklic-at-a-glance.html"
     );
 
 }
