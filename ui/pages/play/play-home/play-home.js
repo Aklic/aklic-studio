@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    loadGamesHome();
+    loadPlayHome();
 
 });
 
-async function loadGamesHome() {
+async function loadPlayHome(){
 
     const app = document.getElementById("app");
 
-    if (!app) return;
+    if(!app) return;
 
     app.innerHTML = await loadHTML(
         "ui/pages/play/play-home/play-home.html"
@@ -29,27 +29,14 @@ async function loadGamesHome() {
         "ui/pages/play/featured-games/featured-games.html"
     );
 
-    // Render all published games
-    renderFeaturedGames();
-
 }
 
-async function loadSection(id, file) {
+async function loadSection(id,file){
 
-    const element = document.getElementById(id);
+    const element=document.getElementById(id);
 
-    if (!element) return;
+    if(!element) return;
 
-    try {
-
-        const html = await loadHTML(file);
-
-        element.innerHTML = html;
-
-    } catch (error) {
-
-        console.error(`Failed to load: ${file}`, error);
-
-    }
+    element.innerHTML=await loadHTML(file);
 
 }
