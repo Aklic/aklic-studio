@@ -1,1 +1,3 @@
+Original game developer information will be added after integration.
 
+Integrated into the Aklic Platform.
