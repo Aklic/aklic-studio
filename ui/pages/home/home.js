@@ -10,38 +10,38 @@ async function loadHome(){
 
     if(!app) return;
 
-    const html = await loadHTML(
+    app.innerHTML = await loadHTML(
         "ui/pages/home/home.html"
     );
 
-    app.innerHTML = html;
-
-    loadSection(
+    await loadSection(
         "hero",
         "ui/pages/home/hero/hero.html"
     );
 
-    loadSection(
+    await loadSection(
         "featured-games",
         "ui/pages/home/featured-games/featured-games.html"
     );
 
-    loadSection(
+    renderFeaturedGames();
+
+    await loadSection(
         "how-it-works",
         "ui/pages/home/how-it-works/how-it-works.html"
     );
 
-    loadSection(
+    await loadSection(
         "why-aklic",
         "ui/pages/home/why-aklic/why-aklic.html"
     );
 
-    loadSection(
+    await loadSection(
         "who-uses",
         "ui/pages/home/who-uses/who-uses.html"
     );
 
-    loadSection(
+    await loadSection(
         "studio-preview",
         "ui/pages/home/studio-preview/studio-preview.html"
     );
@@ -54,8 +54,6 @@ async function loadSection(id,file){
 
     if(!element) return;
 
-    const html = await loadHTML(file);
-
-    element.innerHTML = html;
+    element.innerHTML = await loadHTML(file);
 
 }
