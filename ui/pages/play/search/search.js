@@ -1,13 +1,13 @@
-document.addEventListener("input", event => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    if(event.target.id !== "game-search"){
+    const input = document.getElementById("game-search");
 
-        return;
+    if(!input) return;
 
-    }
+    input.addEventListener("input", () => {
 
-    renderFeaturedGames(
-        event.target.value
-    );
+        renderFeaturedGames(input.value);
+
+    });
 
 });
