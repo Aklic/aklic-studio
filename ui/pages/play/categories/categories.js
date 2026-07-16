@@ -1,18 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const buttons = document.querySelectorAll(".category-btn");
+    document.addEventListener("click", event => {
 
-    buttons.forEach(button => {
+        if(!event.target.classList.contains("category-btn")){
 
-        button.addEventListener("click", () => {
+            return;
 
-            buttons.forEach(item =>
-                item.classList.remove("active")
-            );
+        }
 
-            button.classList.add("active");
+        document
+            .querySelectorAll(".category-btn")
+            .forEach(button=>{
 
-        });
+                button.classList.remove("active");
+
+            });
+
+        event.target.classList.add("active");
+
+        currentCategory =
+            event.target.textContent.trim();
+
+        renderGames();
 
     });
 
