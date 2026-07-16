@@ -1,0 +1,55 @@
+.launcher{
+
+    padding:70px 0;
+
+}
+
+.launcher-card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius-lg);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.launcher-banner img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.launcher-content{
+
+    padding:40px;
+
+}
+
+.launcher-content h1{
+
+    margin:20px 0;
+
+}
+
+.launcher-content p{
+
+    color:var(--text-muted);
+
+    margin-bottom:30px;
+
+}
+
+.launcher-actions{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
