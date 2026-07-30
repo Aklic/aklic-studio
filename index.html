@@ -3,37 +3,383 @@
 
 <head>
 
+    <!-- ==========================================================
+         BASIC META
+    =========================================================== -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <title>Aklic Studio | Play Games. Create Experiences.</title>
 
-    <title>Aklic Studio</title>
+    <meta name="description"
+        content="Play free browser games and discover future game development tools with Aklic Studio.">
 
-    <link
-        rel="stylesheet"
-        href="assets/css/main.css">
+    <meta name="keywords"
+        content="browser games, html5 games, online games, game studio, game development tools">
+
+    <meta name="author" content="Aklic Studio">
+
+    <!-- ==========================================================
+         OPEN GRAPH (Update Later)
+    =========================================================== -->
+
+    <meta property="og:title" content="Aklic Studio">
+    <meta property="og:description"
+        content="Play Games. Create Experiences.">
+    <meta property="og:type" content="website">
+
+    <!-- ==========================================================
+         FAVICON (Add Later)
+    =========================================================== -->
+
+    <!--
+    <link rel="icon" href="assets/logo/favicon.ico">
+    -->
+
+    <!-- ==========================================================
+         CSS
+    =========================================================== -->
+
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-    <div id="navigation"></div>
+    <!-- ==========================================================
+         HEADER
+    =========================================================== -->
 
-    <main id="app"></main>
+    <header class="site-header">
 
-    <div id="footer"></div>
+        <div class="container">
 
-    <script src="core/helpers.js"></script>
+            <a href="/" class="logo">
 
-    <script src="assets/js/main.js"></script>
+                <!-- Replace with your SVG/Image Logo -->
 
-    <script src="ui/layout/navigation/navigation.js"></script>
+                <span>AKLIC STUDIO</span>
 
-    <script src="ui/layout/footer/footer.js"></script>
+            </a>
 
-    <script src="ui/pages/home/home.js"></script>
+            <nav class="main-nav">
+
+                <ul>
+
+                    <li><a href="/" class="active">Home</a></li>
+
+                    <li><a href="games/">Games</a></li>
+
+                    <li><a href="studio/">Studio</a></li>
+
+                    <li><a href="blogs/">Blogs</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                </ul>
+
+            </nav>
+
+            <button
+                class="menu-toggle"
+                aria-label="Open Menu"
+                aria-expanded="false">
+
+                ☰
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================================================
+         MAIN
+    =========================================================== -->
+
+    <main>
+
+        <!-- ======================================================
+             HERO
+        ======================================================= -->
+
+        <section class="hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <span class="hero-tag">
+
+                        Browser Games + Future Creator Tools
+
+                    </span>
+
+                    <h1>
+
+                        Play Games.<br>
+
+                        Create Experiences.
+
+                    </h1>
+
+                    <p>
+
+                        Play free browser games today and explore the future
+                        of game development with Aklic Studio.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="games/" class="btn btn-primary">
+
+                            Play Games
+
+                        </a>
+
+                        <a href="studio/" class="btn btn-secondary">
+
+                            Explore Studio
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+
+                    <!--
+                        Future Illustration
+
+                        Example:
+                        assets/images/hero.webp
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             FUTURE SPONSOR BANNER 01
+             Uncomment when advertisements go live.
+        ======================================================= -->
+
+        <!--
+
+        <section class="sponsor-banner">
+
+            <div class="container">
+
+                Sponsor Banner
+
+            </div>
+
+        </section>
+
+        -->
+
+        <!-- ======================================================
+             GAME CATEGORIES
+        ======================================================= -->
+
+        <section class="game-categories">
+
+            <div class="container">
+
+                <h2>Game Categories</h2>
+
+                <div class="category-grid">
+
+                    <a href="games/">All</a>
+
+                    <a href="games/">Action</a>
+
+                    <a href="games/">Adventure</a>
+
+                    <a href="games/">Arcade</a>
+
+                    <a href="games/">Puzzle</a>
+
+                    <a href="games/">Sports</a>
+
+                    <a href="games/">Kids</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             FEATURED GAMES
+             v1.1.0
+        ======================================================= -->
+
+        <section class="featured-games">
+
+            <div class="container">
+
+                <h2>Featured Games</h2>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             FUTURE SPONSOR BANNER 02
+        ======================================================= -->
+
+        <!--
+
+        <section class="sponsor-banner">
+
+            <div class="container">
+
+                Sponsor Banner
+
+            </div>
+
+        </section>
+
+        -->
+
+        <!-- ======================================================
+             STUDIO PREVIEW
+             v1.2.0
+        ======================================================= -->
+
+        <section class="studio-preview">
+
+            <div class="container">
+
+                <h2>Studio</h2>
+
+                <p>
+
+                    Coming Soon
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             BLOGS
+             v1.3.0
+        ======================================================= -->
+
+        <section class="latest-blogs">
+
+            <div class="container">
+
+                <h2>Latest Blogs</h2>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             WHO USES AKLIC
+        ======================================================= -->
+
+        <section class="who-uses">
+
+            <div class="container">
+
+                <h2>Who Uses Aklic Studio?</h2>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             WHY AKLIC
+        ======================================================= -->
+
+        <section class="why-aklic">
+
+            <div class="container">
+
+                <h2>Why Aklic Studio?</h2>
+
+            </div>
+
+        </section>
+
+        <!-- ======================================================
+             AKLIC AT A GLANCE
+        ======================================================= -->
+
+        <section class="at-a-glance">
+
+            <div class="container">
+
+                <h2>Aklic At A Glance</h2>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================================================
+         FUTURE SPONSOR BANNER 03
+    =========================================================== -->
+
+    <!--
+
+    <section class="sponsor-banner">
+
+        <div class="container">
+
+            Sponsor Banner
+
+        </div>
+
+    </section>
+
+    -->
+
+    <!-- ==========================================================
+         FOOTER
+    =========================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <p>
+
+                © 2026 Aklic Studio. All rights reserved.
+
+            </p>
+
+            <nav>
+
+                <a href="about.html">About</a>
+
+                <a href="#">Contact</a>
+
+                <a href="#">Privacy Policy</a>
+
+                <a href="#">Terms of Use</a>
+
+            </nav>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================================
+         JAVASCRIPT
+    =========================================================== -->
+
+    <script src="js/app.js"></script>
 
 </body>
 
