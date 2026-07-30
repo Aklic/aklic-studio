@@ -1136,6 +1136,22 @@ section{
 
 }
 
+.tm{
+
+    position:relative;
+
+    top:-0.65em;
+
+    margin-left:2px;
+
+    font-size:.38em;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
 .footer-logo span{
 
     font-size:.9rem;
