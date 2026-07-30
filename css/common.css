@@ -1026,8 +1026,8 @@ section{
 @media print{
 
     .menu-toggle,
-    .site-header,
-    .site-footer{
+    .site-header
+    {
 
         display:none !important;
 
