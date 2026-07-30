@@ -1073,41 +1073,53 @@ section{
 
 .footer-brand{
 
-    max-width:340px;
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
 
 }
 
 .footer-logo{
 
-    display:inline-block;
+    display:inline-flex;
 
-    font-size:2rem;
+    align-items:flex-start;
+
+    font-size:3rem;
 
     font-weight:800;
 
-    letter-spacing:1px;
+    line-height:1;
 
-    margin-bottom:18px;
+    letter-spacing:-1.5px;
+
+    margin:0;
 
 }
 
 .footer-logo span{
 
+    font-size:.9rem;
+
+    margin-left:3px;
+
     color:var(--primary);
-
-    font-size:.8rem;
-
-    vertical-align:top;
 
 }
 
 .footer-brand p{
 
+    margin-top:6px;
+
     color:var(--text-muted);
 
-    letter-spacing:2px;
+    font-size:1.05rem;
 
-    text-transform:uppercase;
+    font-weight:500;
+
+    letter-spacing:.5px;
 
 }
 
