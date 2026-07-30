@@ -1044,6 +1044,174 @@ section{
 }
 
 /* ==========================================================
+   FOOTER
+========================================================== */
+
+.site-footer{
+
+    margin-top:120px;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    background:#0f141c;
+
+}
+
+.footer-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+    gap:80px;
+
+    padding:70px 0;
+
+}
+
+.footer-brand{
+
+    max-width:340px;
+
+}
+
+.footer-logo{
+
+    display:inline-block;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-logo span{
+
+    color:var(--primary);
+
+    font-size:.8rem;
+
+    vertical-align:top;
+
+}
+
+.footer-brand p{
+
+    color:var(--text-muted);
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:80px;
+
+}
+
+.footer-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.footer-column a{
+
+    color:var(--text-light);
+
+    transition:.25s;
+
+}
+
+.footer-column a:hover{
+
+    color:var(--primary);
+
+    transform:translateX(6px);
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+
+    padding:28px 0;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    color:var(--text-muted);
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================================
+   FOOTER RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .footer-top{
+
+        flex-direction:column;
+
+        gap:50px;
+
+        text-align:center;
+
+    }
+
+    .footer-brand{
+
+        max-width:none;
+
+    }
+
+    .footer-links{
+
+        width:100%;
+
+        justify-content:center;
+
+        gap:60px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .footer-links{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+    .footer-column{
+
+        align-items:center;
+
+    }
+
+}
+
+/* ==========================================================
    FUTURE DARK / LIGHT MODE
 ========================================================== */
 
