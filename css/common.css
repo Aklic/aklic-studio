@@ -153,35 +153,53 @@ h4,
 h5,
 h6{
 
-    line-height:1.2;
+    color:var(--text);
 
     font-weight:700;
+
+    letter-spacing:-0.03em;
+
+    line-height:1.15;
 
 }
 
 h1{
 
-    font-size:clamp(2.8rem,6vw,5rem);
+    font-size:clamp(2.8rem,5vw,3.8rem);
+
+    margin-bottom:18px;
 
 }
 
 h2{
 
-    font-size:clamp(2rem,4vw,3rem);
+    font-size:clamp(2rem,3vw,2.6rem);
+
+    margin-bottom:16px;
 
 }
 
 h3{
 
-    font-size:1.5rem;
+    font-size:1.35rem;
+
+    margin-bottom:12px;
+
+}
+
+h4{
+
+    font-size:1.15rem;
 
 }
 
 p{
 
-    color:var(--text-light);
+    font-size:1.05rem;
 
-    font-size:1rem;
+    line-height:1.8;
+
+    color:var(--text-light);
 
 }
 
@@ -191,6 +209,23 @@ small{
 
 }
 
+.section-label{
+
+    display:inline-block;
+
+    margin-bottom:12px;
+
+    color:var(--primary);
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
 /* ==========================================================
    CONTAINER
 ========================================================== */
