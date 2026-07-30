@@ -1,9 +1,0 @@
-@import url("variables.css");
-@import url("reset.css");
-@import url("typography.css");
-
-@import url("../../ui/layout/navigation/navigation.css");
-@import url("../../ui/layout/footer/footer.css");
-
-@import url("../../ui/pages/home/home.css");
-@import url("../../ui/pages/play/play-home/play-home.css");
