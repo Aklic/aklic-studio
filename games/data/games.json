@@ -1,1 +1,126 @@
+[
+    {
+        "id": "super-racer",
+        "title": "Super Racer",
+        "description": "Race through exciting tracks and challenge your driving skills.",
+        "category": "action",
+        "tags": [
+            "car",
+            "racing",
+            "speed",
+            "driving"
+        ],
+        "thumbnail": "thumbnails/super-racer.webp",
+        "gameUrl": "games/super-racer/index.html",
+        "featured": true,
+        "new": true,
+        "status": "published",
+        "developer": "Aklic Studio",
+        "version": "1.0.0",
+        "releaseDate": "2026-08-01"
+    },
 
+    {
+        "id": "space-adventure",
+        "title": "Space Adventure",
+        "description": "Explore distant galaxies and survive endless space missions.",
+        "category": "adventure",
+        "tags": [
+            "space",
+            "planet",
+            "rocket",
+            "exploration"
+        ],
+        "thumbnail": "thumbnails/space-adventure.webp",
+        "gameUrl": "games/space-adventure/index.html",
+        "featured": true,
+        "new": false,
+        "status": "published",
+        "developer": "Aklic Studio",
+        "version": "1.0.0",
+        "releaseDate": "2026-08-01"
+    },
+
+    {
+        "id": "arcade-blast",
+        "title": "Arcade Blast",
+        "description": "Classic arcade gameplay with modern challenges and fast action.",
+        "category": "arcade",
+        "tags": [
+            "arcade",
+            "retro",
+            "classic"
+        ],
+        "thumbnail": "thumbnails/arcade-blast.webp",
+        "gameUrl": "games/arcade-blast/index.html",
+        "featured": false,
+        "new": true,
+        "status": "published",
+        "developer": "Aklic Studio",
+        "version": "1.0.0",
+        "releaseDate": "2026-08-01"
+    },
+
+    {
+        "id": "puzzle-master",
+        "title": "Puzzle Master",
+        "description": "Train your brain with hundreds of fun and challenging puzzles.",
+        "category": "puzzle",
+        "tags": [
+            "brain",
+            "logic",
+            "thinking",
+            "challenge"
+        ],
+        "thumbnail": "thumbnails/puzzle-master.webp",
+        "gameUrl": "games/puzzle-master/index.html",
+        "featured": false,
+        "new": false,
+        "status": "published",
+        "developer": "Aklic Studio",
+        "version": "1.0.0",
+        "releaseDate": "2026-08-01"
+    },
+
+    {
+        "id": "ultimate-football",
+        "title": "Ultimate Football",
+        "description": "Lead your team to victory in exciting football matches.",
+        "category": "sports",
+        "tags": [
+            "football",
+            "soccer",
+            "sports",
+            "goal"
+        ],
+        "thumbnail": "thumbnails/ultimate-football.webp",
+        "gameUrl": "games/ultimate-football/index.html",
+        "featured": false,
+        "new": false,
+        "status": "published",
+        "developer": "Aklic Studio",
+        "version": "1.0.0",
+        "releaseDate": "2026-08-01"
+    },
+
+    {
+        "id": "kids-color-world",
+        "title": "Kids Color World",
+        "description": "A colorful educational game designed for young children.",
+        "category": "kids",
+        "tags": [
+            "kids",
+            "learning",
+            "education",
+            "color"
+        ],
+        "thumbnail": "thumbnails/kids-color-world.webp",
+        "gameUrl": "games/kids-color-world/index.html",
+        "featured": false,
+        "new": true,
+        "status": "published",
+        "developer": "Aklic Studio",
+        "version": "1.0.0",
+        "releaseDate": "2026-08-01"
+    }
+]
