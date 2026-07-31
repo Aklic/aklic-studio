@@ -163,3 +163,466 @@
     }
 
 }
+
+/* ==========================================================
+   GAMES LIBRARY
+========================================================== */
+
+.games-library {
+    padding-bottom: 5rem;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+
+/* ==========================================================
+   GAME CARD
+========================================================== */
+
+.game-card {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    overflow: hidden;
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        border-color .3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(37, 99, 235, .25);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+/* ==========================================================
+   THUMBNAIL
+========================================================== */
+
+.game-thumbnail {
+    position: relative;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #dbeafe,
+        #bfdbfe
+    );
+}
+
+.game-thumbnail img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .4s ease;
+}
+
+.game-card:hover .game-thumbnail img {
+    transform: scale(1.05);
+}
+
+
+/* ==========================================================
+   CARD CONTENT
+========================================================== */
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 1.4rem;
+}
+
+
+/* ==========================================================
+   CATEGORY CHIP
+========================================================== */
+
+.game-category {
+    align-self: flex-start;
+
+    margin-bottom: 1rem;
+
+    padding: .35rem .8rem;
+
+    border-radius: 999px;
+
+    background: rgba(37, 99, 235, .08);
+
+    color: var(--primary-color);
+
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.game-title {
+    margin: 0;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    color: var(--text-color);
+}
+
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.game-description {
+    margin: .8rem 0 1.5rem;
+
+    color: var(--text-light);
+
+    line-height: 1.7;
+
+    flex-grow: 1;
+}
+
+
+/* ==========================================================
+   PLAY BUTTON
+========================================================== */
+
+.game-play {
+    margin-top: auto;
+}
+
+.play-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+
+    width: 100%;
+
+    padding: .9rem 1.2rem;
+
+    border: none;
+    border-radius: 14px;
+
+    background: var(--primary-color);
+
+    color: #fff;
+
+    font-weight: 700;
+    font-size: .95rem;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        transform .25s ease;
+}
+
+.play-btn:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+.play-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ==========================================================
+   CARD FOCUS
+========================================================== */
+
+.game-card:focus-within {
+    border-color: var(--primary-color);
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, .10);
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .games-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .game-content {
+        padding: 1.2rem;
+    }
+
+    .game-title {
+        font-size: 1.15rem;
+    }
+
+    .game-description {
+        font-size: .95rem;
+    }
+
+}
+
+/* ==========================================================
+   EMPTY STATE
+========================================================== */
+
+.empty-state {
+    padding: 2rem 0 5rem;
+}
+
+.empty-state.hidden {
+    display: none;
+}
+
+.empty-box {
+    max-width: 540px;
+
+    margin: 0 auto;
+
+    padding: 3rem 2rem;
+
+    text-align: center;
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.empty-icon {
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.empty-box h2 {
+    margin-bottom: .75rem;
+}
+
+.empty-box p {
+    max-width: 360px;
+    margin: 0 auto;
+
+    color: var(--text-light);
+}
+
+
+/* ==========================================================
+   LOADING STATE
+========================================================== */
+
+.games-loading {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.loading-card {
+    overflow: hidden;
+
+    background: var(--surface-color);
+
+    border: 1px solid var(--border-color);
+    border-radius: 24px;
+}
+
+.loading-thumbnail {
+    aspect-ratio: 16 / 9;
+
+    background: var(--background-color);
+}
+
+.loading-content {
+    padding: 1.4rem;
+}
+
+.loading-line {
+    width: 100%;
+    height: 12px;
+
+    margin-bottom: .9rem;
+
+    border-radius: 999px;
+
+    background: linear-gradient(
+        90deg,
+        #eef2ff 0%,
+        #ffffff 50%,
+        #eef2ff 100%
+    );
+
+    background-size: 200% 100%;
+
+    animation: loading-shimmer 1.5s linear infinite;
+}
+
+.loading-line.short {
+    width: 45%;
+}
+
+.loading-line.medium {
+    width: 70%;
+}
+
+.loading-line:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================================
+   ANIMATIONS
+========================================================== */
+
+@keyframes loading-shimmer {
+
+    from {
+        background-position: 200% 0;
+    }
+
+    to {
+        background-position: -200% 0;
+    }
+
+}
+
+
+/* ==========================================================
+   ACCESSIBILITY
+========================================================== */
+
+.search-box input:focus,
+.filter-btn:focus-visible,
+.play-btn:focus-visible {
+    outline: none;
+}
+
+.filter-btn:focus-visible,
+.play-btn:focus-visible {
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, .18);
+}
+
+.game-card,
+.filter-btn,
+.play-btn,
+.search-box {
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        background-color .25s ease,
+        color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+/* ==========================================================
+   REDUCED MOTION
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .games-library {
+        padding-bottom: 4rem;
+    }
+
+    .games-grid,
+    .games-loading {
+        gap: 1.5rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .empty-box {
+        padding: 2rem 1.5rem;
+    }
+
+    .empty-icon {
+        font-size: 3.25rem;
+    }
+
+    .loading-content {
+        padding: 1.2rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .games-hero {
+        padding-top: 3rem;
+    }
+
+    .controls-panel {
+        padding: 1rem;
+    }
+
+    .search-box {
+        padding: .85rem 1rem;
+    }
+
+    .filter-list {
+        justify-content: center;
+    }
+
+    .filter-btn {
+        font-size: .85rem;
+        padding: .6rem .9rem;
+    }
+
+}
