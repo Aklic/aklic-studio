@@ -1,1 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Play Free Browser Games | Aklic Studio</title>
+
+    <meta name="description"
+        content="Play free browser games instantly. Explore action, adventure, arcade, puzzle, sports and kids games on Aklic Studio.">
+
+    <link rel="canonical" href="https://aklic.com/games/">
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Global CSS -->
+
+    <link rel="stylesheet" href="../css/common.css">
+
+    <!-- Games CSS -->
+
+    <link rel="stylesheet" href="css/games.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================
+         HEADER
+    =========================== -->
+
+    <header id="site-header"></header>
+
+    <!-- ==========================
+         MAIN
+    =========================== -->
+
+    <main>
+
+        <!-- ==========================
+             PAGE HERO
+        =========================== -->
+
+        <section class="games-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+
+                    PLAY
+
+                </span>
+
+                <h1>
+
+                    Play Browser Games
+
+                </h1>
+
+                <p>
+
+                    Discover free browser games across action,
+                    adventure, arcade, puzzle, sports and more.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             SEARCH
+        =========================== -->
+
+        <section class="games-search">
+
+            <div class="container">
+
+                <div class="search-wrapper">
+
+                    <input
+                        id="game-search"
+                        type="search"
+                        placeholder="Search games..."
+                        autocomplete="off">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             FILTERS
+        =========================== -->
+
+        <section class="games-filter">
+
+            <div class="container">
+
+                <div class="filter-list">
+
+                    <button class="filter-btn active" data-category="all">
+
+                        All
+
+                    </button>
+
+                    <button class="filter-btn" data-category="action">
+
+                        Action
+
+                    </button>
+
+                    <button class="filter-btn" data-category="adventure">
+
+                        Adventure
+
+                    </button>
+
+                    <button class="filter-btn" data-category="arcade">
+
+                        Arcade
+
+                    </button>
+
+                    <button class="filter-btn" data-category="puzzle">
+
+                        Puzzle
+
+                    </button>
+
+                    <button class="filter-btn" data-category="sports">
+
+                        Sports
+
+                    </button>
+
+                    <button class="filter-btn" data-category="kids">
+
+                        Kids
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             GAMES
+        =========================== -->
+
+        <section class="games-list">
+
+            <div class="container">
+
+                <div id="games-grid" class="games-grid">
+
+                    <!--
+                        Games will be generated
+                        from games.json
+                    -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             EMPTY STATE
+        =========================== -->
+
+        <section
+            id="empty-state"
+            class="empty-state hidden">
+
+            <div class="container">
+
+                <div class="empty-box">
+
+                    <div class="empty-icon">
+
+                        🎮
+
+                    </div>
+
+                    <h2>
+
+                        No Games Found
+
+                    </h2>
+
+                    <p>
+
+                        Try another search or choose a different category.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         FOOTER
+    =========================== -->
+
+    <footer id="site-footer"></footer>
+
+    <!-- ==========================
+         JAVASCRIPT
+    =========================== -->
+
+    <script src="../js/common.js"></script>
+
+    <script src="js/games.js"></script>
+
+</body>
+
+</html>
